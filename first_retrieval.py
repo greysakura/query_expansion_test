@@ -21,17 +21,26 @@ if __name__ == "__main__":
     target_image_dir = 'C:/Cassandra/orz.jpg'
     img = cv2.imread(target_image_dir)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    surf = cv2.SURF(2000)
     sift = cv2.SIFT()
-    kpts_target, des_target = sift.detectAndCompute(img_gray, None)
-    img = cv2.drawKeypoints(img_gray, kpts_target, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+    des_target = surf.detect(img_gray, None)
+    kpts_target, des_target = sift.compute(img_gray, des_target)
+    # kpts_target, des_target = sift.detectAndCompute(img_gray, None)
+    # img = cv2.drawKeypoints(img_gray, kpts_target, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
     target_image_keypoint_num = len(kpts_target)
+
+    img3 = cv2.drawKeypoints(img_gray,kpts_target,None,(0,0,255),4)
+    cv2.imshow('img1', img3)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
     print len(kpts_target)
 
-    for i in range(len(kpts_target)):
-        kpts_target[i].octave = (kpts_target[i].octave % 256)
-        if kpts_target[i].octave > 8:
-            kpts_target[i].octave = (kpts_target[i].octave - 256)
-        print kpts_target[i].octave
+    # for i in range(len(kpts_target)):
+    #     kpts_target[i].octave = (kpts_target[i].octave % 256)
+    #     if kpts_target[i].octave > 8:
+    #         kpts_target[i].octave = (kpts_target[i].octave - 256)
+    #     print kpts_target[i].octave
 
 
     # Allocate each new descriptor to a certain cluster.
@@ -187,29 +196,38 @@ if __name__ == "__main__":
             kp_tmp.class_id = int(float(row[6]))
             kpts_tmp.append(kp_tmp)
         kpts_tmp_file.close()
-        print len(kpts_tmp)
+        # print len(kpts_tmp)
         tmp_VW_file.close()
         ## do the matching
         bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-        print des_target
+        # print des_target
         des_target_tmp = np.uint8(des_target)
-        print type(des_target_tmp[0,0])
+        # print type(des_target_tmp[0,0])
         des_mat_tmp = np.uint8(des_mat_tmp)
-        print type(des_mat_tmp[0,0])
-        print type(kpts_tmp[0])
+        # print type(des_mat_tmp[0,0])
+        # print type(kpts_tmp[0])
         # numpy.uint8 VS. numpy.uint8
         # tmp_matches = bf.match(des_target_tmp, des_mat_tmp)
         # tmp_matches = sorted(tmp_matches, key = lambda x:x.distance)
         matches = bf.knnMatch(des_target_tmp, trainDescriptors = des_mat_tmp, k = 2)
-        for j in range(len(kpts_tmp)):
-            # kp1[i].octave = (kp1[i].octave & 0xFF)
-            kpts_tmp[j].octave = (kpts_tmp[j].octave % 256)
-            if kpts_tmp[j].octave > 8:
-                kpts_tmp[j].octave = (kpts_tmp[j].octave - 256)
+        # for j in range(len(kpts_tmp)):
+        #     # kp1[i].octave = (kp1[i].octave & 0xFF)
+        #     kpts_tmp[j].octave = (kpts_tmp[j].octave % 256)
+        #     if kpts_tmp[j].octave > 8:
+        #         kpts_tmp[j].octave = (kpts_tmp[j].octave - 256)
 
         p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.95)
 
-        print type(kp_pairs)
+        # for j in range(len(matches)):
+        #     print matches[j][0].distance
+        #     print matches[j][1].distance
+        #     print
+        #
+        # for j in range(len(kpts_tmp)):
+        #     print kpts_tmp[j].size
+
+        print len(matches)
+        # print type(kp_pairs)
         print 'kp_pairs: ', len(kp_pairs)
         if len(kp_pairs) > 0:
             try:

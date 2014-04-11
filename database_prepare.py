@@ -32,9 +32,19 @@ def search_dir_and_create_csv(image_dir, top_dir):
     img = cv2.imread(image_dir)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img_gray = cv2.resize(img_gray, (0,0), fx=0.5, fy=0.5)
+
     sift = cv2.SIFT()
-    kp, des = sift.detectAndCompute(img_gray, None)
-    img = cv2.drawKeypoints(img_gray, kp, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+    surf = cv2.SURF(1000)
+    kp = surf.detect(img_gray, None)
+    kp, des = sift.compute(img_gray, kp)
+    # kp, des = sift.detectAndCompute(img_gray, None)
+
+    # img = cv2.drawKeypoints(img_gray, kp, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+    # print type(des[0,0])
+    # for i in range(len(kp)):
+    #     kp[i].octave = (kp[i].octave % 256)
+    #     if kp[i].octave > 8:
+    #         kp[i].octave = (kp[i].octave - 256)
 
     keypoint_num = len(kp)
     print image_dir
