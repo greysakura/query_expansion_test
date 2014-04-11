@@ -178,7 +178,7 @@ for i in range(len(result_img_dir)):
     for j in range(cluster_number):
         TF_IDF_tmp[0, j] = (0.5 + 0.5 * float((line.split(','))[j]) / float(VW_max_occur[0,i])) * IDF_matrix[0, j]
     # Normalize TF_IDF_tmp
-    TF_IDF_inner = np.dot(TF_IDF_tmp, np.transpose(TF_IDF_tmp))
+    TF_IDF_inner = math.sqrt(np.dot(TF_IDF_tmp, np.transpose(TF_IDF_tmp)))
     TF_IDF_tmp = TF_IDF_tmp / TF_IDF_inner
     if i == 0:
         TF_IDF_out = TF_IDF_tmp.copy()

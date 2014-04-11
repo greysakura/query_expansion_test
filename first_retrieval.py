@@ -3,6 +3,8 @@ __author__ = 'LIMU_North'
 import csv
 import cv2
 import numpy as np
+import sys
+from find_obj import filter_matches,explore_match
 
 
 # def descriptor_distance_calc(vector_01, vector_02):
@@ -10,23 +12,28 @@ import numpy as np
 #     return distance
 if __name__ == "__main__":
     top_dir = 'C:/Cassandra/here/'
-
     # Number of clusters: 128 at present
     cluster_number = 128
     # Using SIFT here
     des_dimension = 128
     first_retrieval_num = 10
-
     # import target image
-
     target_image_dir = 'C:/Cassandra/orz.jpg'
     img = cv2.imread(target_image_dir)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     sift = cv2.SIFT()
-    kpts_target, des = sift.detectAndCompute(img_gray, None)
+    kpts_target, des_target = sift.detectAndCompute(img_gray, None)
     img = cv2.drawKeypoints(img_gray, kpts_target, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
     target_image_keypoint_num = len(kpts_target)
     print len(kpts_target)
+
+    for i in range(len(kpts_target)):
+        kpts_target[i].octave = (kpts_target[i].octave % 256)
+        if kpts_target[i].octave > 8:
+            kpts_target[i].octave = (kpts_target[i].octave - 256)
+        print kpts_target[i].octave
+
+
     # Allocate each new descriptor to a certain cluster.
 
     kmeans_result_append = '/kmeans_result.txt'
@@ -51,7 +58,7 @@ if __name__ == "__main__":
     for i in range(len(kpts_target)):
         distance_calc = np.zeros((1,centers.shape[0]), np.float32)
         for j in range(centers.shape[0]):
-            distance_calc[0,j] = np.dot((np.transpose(des[i] - centers[j])),(des[i] - centers[j]))
+            distance_calc[0,j] = np.dot((np.transpose(des_target[i] - centers[j])),(des_target[i] - centers[j]))
         target_image_keypoint_labels[0,i] = distance_calc.argmax(axis = 1)[0]
 
     # print target_image_keypoint_labels
@@ -139,8 +146,8 @@ if __name__ == "__main__":
     print distance_ranking[0][1]
 
     for i in range(first_retrieval_num):
-        # img_tmp = cv2.imread(result_img_dir[distance_ranking[0][i]])
-        # img_tmp = cv2.resize(img_tmp, (0,0), fx=0.5, fy=0.5)
+        img_tmp = cv2.imread(result_img_dir[distance_ranking[0][i]],0 )
+        img_tmp = cv2.resize(img_tmp, (0,0), fx=0.5, fy=0.5)
         # cv2.namedWindow(result_img_dir[distance_ranking[0][i]])
         # cv2.imshow(result_img_dir[distance_ranking[0][i]], img_tmp)
         # cv2.waitKey(0)
@@ -156,8 +163,8 @@ if __name__ == "__main__":
         des_num_tmp = int(float(line_VW.split(',')[0]))
         des_dimension_tmp = int(float(line_VW.split(',')[1]))
         # tmp for descriptors
-        des_tmp_file = open(image_dir_des,'rb')
         des_mat_tmp = np.zeros((des_num_tmp, des_dimension_tmp), np.int32)
+        des_tmp_file = open(image_dir_des,'rb')
         reader_des = csv.reader(des_tmp_file, delimiter=',', quoting = csv.QUOTE_NONE)
         row_count = 0
         for row in reader_des:
@@ -176,17 +183,53 @@ if __name__ == "__main__":
             kp_tmp.size = float(row[2])
             kp_tmp.angle = float(row[3])
             kp_tmp.response = float(row[4])
-            kp_tmp.octave = float(row[5])
+            kp_tmp.octave = int(float(row[5]))
             kp_tmp.class_id = int(float(row[6]))
-            # kpts_tmp.append(kp_tmp)
+            kpts_tmp.append(kp_tmp)
         kpts_tmp_file.close()
-        print kpts_tmp
-
+        print len(kpts_tmp)
         tmp_VW_file.close()
+        ## do the matching
+        bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+        print des_target
+        des_target_tmp = np.uint8(des_target)
+        print type(des_target_tmp[0,0])
+        des_mat_tmp = np.uint8(des_mat_tmp)
+        print type(des_mat_tmp[0,0])
+        print type(kpts_tmp[0])
+        # numpy.uint8 VS. numpy.uint8
+        # tmp_matches = bf.match(des_target_tmp, des_mat_tmp)
+        # tmp_matches = sorted(tmp_matches, key = lambda x:x.distance)
+        matches = bf.knnMatch(des_target_tmp, trainDescriptors = des_mat_tmp, k = 2)
+        for j in range(len(kpts_tmp)):
+            # kp1[i].octave = (kp1[i].octave & 0xFF)
+            kpts_tmp[j].octave = (kpts_tmp[j].octave % 256)
+            if kpts_tmp[j].octave > 8:
+                kpts_tmp[j].octave = (kpts_tmp[j].octave - 256)
+
+        p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.95)
+
+        print type(kp_pairs)
+        print 'kp_pairs: ', len(kp_pairs)
+        if len(kp_pairs) > 0:
+            try:
+                explore_match('find_obj', img_gray,img_tmp,kp_pairs)
+                cv2.waitKey()
+                cv2.destroyAllWindows()
+            except :
+                print i
 
 
-    # spatial verification stage
 
+
+        # img2 = cv2.drawKeypoints(img_tmp,kpts_tmp,color=(0,0,255), flags=0)
+        # cv2.imshow(result_img_dir[distance_ranking[0][i]], img2)
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
+        # we had all the kpts and
+
+        # spatial verification stage
+        # see you tomorrow
 
 
 

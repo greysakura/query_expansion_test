@@ -26,18 +26,27 @@ orb = cv2.ORB()
 kp_tmp = cv2.KeyPoint()
 print type(kp_tmp.size)
 kp_tmp.pt = (1,1)
-print kp_tmp.pt
+
 
 # find the keypoints and descriptors with SIFT
 kp1, des1 = orb.detectAndCompute(img1,None)
 kp2, des2 = orb.detectAndCompute(img2,None)
 
-print type(kp1[0].pt[0])
-print type(kp1[0].octave)
-print 'octave: ', kp1[1].octave
+
+for i in range(len(kp1)):
+    print 'kp1[', i , '].octave: ', kp1[i].octave
+
+for i in range(len(kp1)):
+    print 'kp1[', i , '].size: ', kp1[i].size
+
+# print type(kp1[0].pt[0])
+# print type(kp1[0].octave)
+# print 'octave: ', kp1[1].octave
 
 # create BFMatcher object
 bf = cv2.BFMatcher(cv2.NORM_HAMMING)#, crossCheck=True)
+
+print type(des2[0,0])
 
 matches = bf.knnMatch(des1, trainDescriptors = des2, k = 2)
 p1, p2, kp_pairs = filter_matches(kp1, kp2, matches)
