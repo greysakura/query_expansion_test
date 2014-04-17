@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153c1295-d1cb-4347-a651-8bdbf1f0e1c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group_on_VW.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first_retrieval.py" afterPath="$PROJECT_DIR$/first_retrieval.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hessian_test.py" afterPath="$PROJECT_DIR$/hessian_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kmean_inverted_file.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group_on_VW.py" afterPath="$PROJECT_DIR$/group_on_VW.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/read_and_kmeans.py" afterPath="$PROJECT_DIR$/read_and_kmeans.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sift_retest.py" afterPath="$PROJECT_DIR$/sift_retest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="query_expansion_test.iws" />
@@ -31,16 +32,25 @@
       <file leaf-file-name="database_prepare.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database_prepare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="41" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="2200">
+            <state line="85" column="0" selection-start="2660" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2200">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_and_kmeans.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="read_and_kmeans.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="4540">
+            <state line="240" column="0" selection-start="7407" selection-end="7407" vertical-scroll-proportion="0.63058823" vertical-offset="4164" max-vertical-offset="5040">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kmean_inverted_file.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="0" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0" vertical-offset="1990" max-vertical-offset="4420">
               <folding />
             </state>
           </provider>
@@ -49,19 +59,17 @@
       <file leaf-file-name="first_retrieval.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first_retrieval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="80" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="6860">
+            <state line="67" column="66" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="6860">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="group_on_VW.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="group_on_VW.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_on_VW.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="343" column="112" selection-start="14072" selection-end="14072" vertical-scroll-proportion="1.3846154" vertical-offset="6068" max-vertical-offset="7240">
-              <folding>
-                <element signature="e#27#37#0" expanded="true" />
-              </folding>
+            <state line="304" column="0" selection-start="12193" selection-end="12193" vertical-scroll-proportion="0.0" vertical-offset="5890" max-vertical-offset="7380">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,16 +86,7 @@
       <file leaf-file-name="sift_retest.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sift_retest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="59" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hessian_test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hessian_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1880" max-vertical-offset="2200">
+            <state line="60" column="20" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
@@ -107,13 +106,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/read_and_kmeans.py" />
         <option value="$PROJECT_DIR$/matching_homography.py" />
-        <option value="$PROJECT_DIR$/sift_retest.py" />
         <option value="$PROJECT_DIR$/database_prepare.py" />
         <option value="$PROJECT_DIR$/hessian_test.py" />
         <option value="$PROJECT_DIR$/first_retrieval.py" />
         <option value="$PROJECT_DIR$/group_on_VW.py" />
+        <option value="$PROJECT_DIR$/sift_retest.py" />
+        <option value="$PROJECT_DIR$/kmean_inverted_file.py" />
+        <option value="$PROJECT_DIR$/read_and_kmeans.py" />
       </list>
     </option>
   </component>
@@ -185,7 +185,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.group_on_VW">
+  <component name="RunManager" selected="Python.read_and_kmeans">
     <configuration default="false" name="first_retrieval" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,44 +203,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="hessian_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hessian_test.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="database_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database_prepare.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -279,6 +241,42 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="kmean_inverted_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kmean_inverted_file.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sift_retest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sift_retest.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -405,18 +403,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.first_retrieval" />
-      <item index="1" class="java.lang.String" itemvalue="Python.hessian_test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.database_prepare" />
-      <item index="3" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-      <item index="4" class="java.lang.String" itemvalue="Python.group_on_VW" />
+      <item index="1" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
+      <item index="2" class="java.lang.String" itemvalue="Python.group_on_VW" />
+      <item index="3" class="java.lang.String" itemvalue="Python.kmean_inverted_file" />
+      <item index="4" class="java.lang.String" itemvalue="Python.sift_retest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.group_on_VW" />
-        <item index="1" class="java.lang.String" itemvalue="Python.first_retrieval" />
-        <item index="2" class="java.lang.String" itemvalue="Python.hessian_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-        <item index="4" class="java.lang.String" itemvalue="Python.database_prepare" />
+        <item index="0" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sift_retest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.kmean_inverted_file" />
+        <item index="3" class="java.lang.String" itemvalue="Python.group_on_VW" />
+        <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval" />
       </list>
     </recent_temporary>
   </component>
@@ -440,13 +438,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31447965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3223982" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -531,15 +529,41 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/group_on_VW.py</url>
-          <line>304</line>
-          <option name="timeStamp" value="34" />
+          <url>file://$PROJECT_DIR$/kmean_inverted_file.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/group_on_VW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="112" selection-start="14072" selection-end="14072" vertical-scroll-proportion="0.0" vertical-offset="6068" max-vertical-offset="7240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matching_homography.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sift_retest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="59" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hessian_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1880" max-vertical-offset="2200" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="41" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200">
@@ -564,9 +588,7 @@
     <entry file="file://$PROJECT_DIR$/group_on_VW.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="316" column="41" selection-start="12730" selection-end="12730" vertical-scroll-proportion="0.0" vertical-offset="6816" max-vertical-offset="7320">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,9 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hessian_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1880" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1880" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
@@ -633,9 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hessian_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
@@ -680,9 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hessian_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="35" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1800">
-          <folding />
-        </state>
+        <state line="84" column="35" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
@@ -727,9 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hessian_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="920">
-          <folding />
-        </state>
+        <state line="23" column="12" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="920" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
@@ -798,37 +812,9 @@
         <state line="6" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.21466905" vertical-offset="0" max-vertical-offset="4460" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sift_retest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="59" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="4440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find_obj.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="28" selection-start="1815" selection-end="1815" vertical-scroll-proportion="-0.047058824" vertical-offset="1160" max-vertical-offset="3420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_prepare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="41" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="1535" max-vertical-offset="2100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hessian_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1495" max-vertical-offset="2120">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/matching_homography.py">
@@ -840,17 +826,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="80" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="6860">
+        <state line="67" column="66" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.0" vertical-offset="5590" max-vertical-offset="6780">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hessian_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="2.8621974" vertical-offset="263" max-vertical-offset="2120" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/group_on_VW.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="112" selection-start="14072" selection-end="14072" vertical-scroll-proportion="1.3846154" vertical-offset="6068" max-vertical-offset="7240">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+        <state line="304" column="0" selection-start="12193" selection-end="12193" vertical-scroll-proportion="0.0" vertical-offset="5890" max-vertical-offset="7380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="2660" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sift_retest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="20" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="634" max-vertical-offset="1240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0" vertical-offset="1990" max-vertical-offset="4420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="0" selection-start="7407" selection-end="7407" vertical-scroll-proportion="0.63058823" vertical-offset="4164" max-vertical-offset="5040">
+          <folding />
         </state>
       </provider>
     </entry>

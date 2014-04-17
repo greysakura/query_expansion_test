@@ -56,3 +56,7 @@ if len(kp_pairs):
     cv2.waitKey()
     cv2.destroyAllWindows()
 
+real_tmp = np.zeros((0,0), np.int32)
+
+print real_tmp.shape
+

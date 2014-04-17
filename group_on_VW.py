@@ -336,21 +336,28 @@ if __name__ == "__main__":
         # print data_image_top_des
         print type(des_target[0,0])
 
-        # for j in range(how_many_top):
-        #     print 'round ', j
-        #     bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-        #     matches = bf.knnMatch(np.uint8(target_image_top_des[j]), trainDescriptors = np.uint8(data_image_top_des[j]), k = 2)
-        #     print len(matches)
-        #     p1, p2, kp_pairs = filter_matches(target_image_top_kpts[j], data_image_top_kpts[j], matches, 0.99)
-        #     if len(kp_pairs) > 0:
-        #         try:
-        #             explore_match('find_obj', img_gray,img_tmp,kp_pairs)
-        #             cv2.waitKey()
-        #             cv2.destroyAllWindows()
-        #         except:
-        #             print 'error!!!'
-        #     else:
-        #         print 'not enough pairs.'
-        #         # print np.uint8(target_image_top_des[j])
-        #         print np.uint8(data_image_top_des[j])
-        #         print 'len of kp_pairs: ', len(kp_pairs)
+        ## from here. if the VW appears more than 5 time, then we perform the homography on it.
+
+
+
+
+        for j in range(how_many_top):
+            ## threshold: 5
+            if data_image_top_des[j].shape[0] >= 5:
+                print 'round ', j
+                bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+                matches = bf.knnMatch(np.uint8(target_image_top_des[j]), trainDescriptors = np.uint8(data_image_top_des[j]), k = 2)
+                print len(matches)
+                p1, p2, kp_pairs = filter_matches(target_image_top_kpts[j], data_image_top_kpts[j], matches, 0.99)
+                if len(kp_pairs) > 0:
+                    try:
+                        explore_match('find_obj', img_gray,img_tmp,kp_pairs)
+                        cv2.waitKey()
+                        cv2.destroyAllWindows()
+                    except:
+                        print 'error!!!'
+                else:
+                    print 'not enough pairs.'
+                    # print np.uint8(target_image_top_des[j])
+                    print np.uint8(data_image_top_des[j])
+                    print 'len of kp_pairs: ', len(kp_pairs)

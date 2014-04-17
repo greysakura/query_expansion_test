@@ -109,6 +109,11 @@ print 'compactness: ', compactness
 des_count_for_VW = 0
 VW_max_occur = np.zeros((1,len(result_img_dir)),np.int32)
 VW_showing_up = np.zeros((1, cluster_number), np.int32)
+
+## prepare an empty inverted_file_matrix. But the size is not (0,0)
+inverted_file_matrix = np.zeros((cluster_number,0), np.int32)
+##
+
 for i in range(len(result_img_dir)):
 
     img_des_tmp = (result_img_dir[i].split('.'))[0] + '_VW.txt'
@@ -126,6 +131,9 @@ for i in range(len(result_img_dir)):
         if (result_img_kpts>=1) & (j < (result_img_kpts[i] - 1)):
             the_file.write(',')
     the_file.write('\n')
+
+    ## Extra: for inverted file
+    inverted_file_matrix = np.concatenate((inverted_file_matrix, np.int32(VW_tmp.transpose() > 0)), axis = 1)
 
     for j in range(cluster_number):
         the_file.write(str(VW_tmp[0,j]))
@@ -210,7 +218,29 @@ for i in range(TF_IDF_out.shape[0]):
     TF_IDF_file.write('\n')
 TF_IDF_file.close()
 
+print 'inverted file matrix: '
+print inverted_file_matrix
+print inverted_file_matrix.shape
+## write inverted file storage file
+inverted_file_append = '/inverted_file_matrix_python.txt'
+inverted_file_dir = top_dir + inverted_file_append
+inverted_file_file = open(inverted_file_dir, 'w')
+## let's write it.
+inverted_file_file.write(str(cluster_number))
+inverted_file_file.write(',')
+inverted_file_file.write(str(image_count))
+inverted_file_file.write('\n')
+for i in range(inverted_file_matrix.shape[0]):
+    for j in range(inverted_file_matrix.shape[1]):
+        inverted_file_file.write(str(inverted_file_matrix[i,j]))
+        if j < (inverted_file_matrix.shape[1] - 1):
+            inverted_file_file.write(',')
+    inverted_file_file.write('\n')
+inverted_file_file.close()
 
+
+print 'number of images: '
+print image_count
 
 
 
