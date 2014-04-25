@@ -154,15 +154,6 @@ for i in range(len(result_img_dir)):
     VW_max_occur[0,i] = np.amax(VW_tmp, axis=1)[0]
     the_file.close()
 
-# print VW_max_occur.shape
-#
-# print 'VW_max_occur: ', VW_max_occur
-# print
-#
-# print VW_showing_up.shape
-#
-# print 'VW_showing_up: ', VW_showing_up
-
 # IDF matrix: 1 * 128clusters
 
 IDF_matrix = np.zeros((1, cluster_number), np.float64)
@@ -192,16 +183,7 @@ for i in range(len(result_img_dir)):
         TF_IDF_out = TF_IDF_tmp.copy()
     else:
         TF_IDF_out = np.concatenate((TF_IDF_out, TF_IDF_tmp), axis = 0)
-    # print IDF_matrix
-    # print img_des_tmp
-    # print TF_IDF_tmp
-    #
-    # print TF_IDF_tmp.shape.
 
-print TF_IDF_out
-
-
-print TF_IDF_out.shape
 TF_IDF_append = '/TF_IDF_matrix.txt'
 TF_IDF_dir = top_dir + TF_IDF_append
 TF_IDF_file = open(TF_IDF_dir, 'w')

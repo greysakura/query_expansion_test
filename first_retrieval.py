@@ -68,10 +68,10 @@ if __name__ == "__main__":
         distance_calc = np.zeros((1,centers.shape[0]), np.float32)
         for j in range(centers.shape[0]):
             distance_calc[0,j] = np.dot((np.transpose(des_target[i] - centers[j])),(des_target[i] - centers[j]))
-        target_image_keypoint_labels[0,i] = distance_calc.argsort(axis = 1)[0, 0]   ## argsort?
+        ## argsort? we want to find the min distance, and that would be the nearest cluster center.
+        target_image_keypoint_labels[0,i] = distance_calc.argsort(axis = 1)[0, 0]
 
-    # print target_image_keypoint_labels
-    # print target_image_keypoint_labels.shape
+    ## generate VW for target image.
     target_image_VW = np.zeros((1, cluster_number), np.int32)
     for i in range(target_image_keypoint_labels.shape[1]):
         target_image_VW[0, target_image_keypoint_labels[0,i]] += 1
@@ -146,8 +146,6 @@ if __name__ == "__main__":
             target_image_VW_file.write(',')
     target_image_VW_file.write('\n')
     target_image_VW_file.close()
-
-
 
     ## here we do some extra 14/04/14
     ## we want to read the descriptors in the same VW. The top 3 VWs with the most descriptors.
@@ -286,14 +284,6 @@ if __name__ == "__main__":
 
         p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.95)
 
-        # for j in range(len(matches)):
-        #     print matches[j][0].distance
-        #     print matches[j][1].distance
-        #     print
-        #
-        # for j in range(len(kpts_tmp)):
-        #     print kpts_tmp[j].size
-
         print len(matches)
         # print type(kp_pairs)
         print 'kp_pairs: ', len(kp_pairs)
@@ -304,9 +294,6 @@ if __name__ == "__main__":
                 cv2.destroyAllWindows()
             except :
                 print i
-
-
-
 
         # img2 = cv2.drawKeypoints(img_tmp,kpts_tmp,color=(0,0,255), flags=0)
         # cv2.imshow(result_img_dir[distance_ranking[0][i]], img2)

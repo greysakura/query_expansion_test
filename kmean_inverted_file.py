@@ -53,12 +53,8 @@ if __name__ == "__main__":
         the_file.close()
     print mat_stack.shape
 
-
     # set as float32
     mat_stack = np.float32(mat_stack)
-    # print mat_stack[0,0]
-    # print type(mat_stack[0,0])
-
 
     # Set flags (Just to avoid line break in the code)
     flags = cv2.KMEANS_RANDOM_CENTERS
@@ -152,9 +148,6 @@ if __name__ == "__main__":
         # the max value, another version
         # print np.amax(VW_tmp, axis=1)[0]
         VW_max_occur[0,i] = np.amax(VW_tmp, axis=1)[0]
-
-
-
         the_file.close()
 
     # IDF matrix: 1 * 128clusters
@@ -185,8 +178,6 @@ if __name__ == "__main__":
             TF_IDF_out = np.concatenate((TF_IDF_out, TF_IDF_tmp), axis = 0)
 
     print TF_IDF_out
-
-
     print TF_IDF_out.shape
     TF_IDF_append = '/TF_IDF_matrix.txt'
     TF_IDF_dir = top_dir + TF_IDF_append

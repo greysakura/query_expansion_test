@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153c1295-d1cb-4347-a651-8bdbf1f0e1c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kmean_inverted_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group_on_VW.py" afterPath="$PROJECT_DIR$/group_on_VW.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first_retrieval.py" afterPath="$PROJECT_DIR$/first_retrieval.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kmean_inverted_file.py" afterPath="$PROJECT_DIR$/kmean_inverted_file.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/read_and_kmeans.py" afterPath="$PROJECT_DIR$/read_and_kmeans.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sift_retest.py" afterPath="$PROJECT_DIR$/sift_retest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="query_expansion_test.iws" />
@@ -32,16 +31,16 @@
       <file leaf-file-name="database_prepare.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database_prepare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="2660" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2200">
+            <state line="86" column="18" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0" vertical-offset="1474" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_and_kmeans.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="read_and_kmeans.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="0" selection-start="7407" selection-end="7407" vertical-scroll-proportion="0.63058823" vertical-offset="4164" max-vertical-offset="5040">
+            <state line="194" column="36" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="3900" max-vertical-offset="4680">
               <folding />
             </state>
           </provider>
@@ -50,16 +49,16 @@
       <file leaf-file-name="kmean_inverted_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="0" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0" vertical-offset="1990" max-vertical-offset="4420">
+            <state line="150" column="24" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="4140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="first_retrieval.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="first_retrieval.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first_retrieval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="66" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="6860">
+            <state line="296" column="0" selection-start="12334" selection-end="12334" vertical-scroll-proportion="0.017482517" vertical-offset="5830" max-vertical-offset="6520">
               <folding />
             </state>
           </provider>
@@ -68,7 +67,7 @@
       <file leaf-file-name="group_on_VW.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_on_VW.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="304" column="0" selection-start="12193" selection-end="12193" vertical-scroll-proportion="0.0" vertical-offset="5890" max-vertical-offset="7380">
+            <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="6560" max-vertical-offset="7380">
               <folding />
             </state>
           </provider>
@@ -78,6 +77,15 @@
         <entry file="file://$PROJECT_DIR$/matching_homography.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EM_test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EM_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="23" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4200">
               <folding />
             </state>
           </provider>
@@ -109,11 +117,11 @@
         <option value="$PROJECT_DIR$/matching_homography.py" />
         <option value="$PROJECT_DIR$/database_prepare.py" />
         <option value="$PROJECT_DIR$/hessian_test.py" />
-        <option value="$PROJECT_DIR$/first_retrieval.py" />
         <option value="$PROJECT_DIR$/group_on_VW.py" />
         <option value="$PROJECT_DIR$/sift_retest.py" />
-        <option value="$PROJECT_DIR$/kmean_inverted_file.py" />
         <option value="$PROJECT_DIR$/read_and_kmeans.py" />
+        <option value="$PROJECT_DIR$/kmean_inverted_file.py" />
+        <option value="$PROJECT_DIR$/first_retrieval.py" />
       </list>
     </option>
   </component>
@@ -149,6 +157,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,7 +178,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,27 +193,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.read_and_kmeans">
-    <configuration default="false" name="first_retrieval" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first_retrieval.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.first_retrieval">
     <configuration default="false" name="read_and_kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,7 +232,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="kmean_inverted_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="EM_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -256,27 +244,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kmean_inverted_file.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sift_retest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sift_retest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EM_test.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="database_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database_prepare.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="first_retrieval" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first_retrieval.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -402,19 +410,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.first_retrieval" />
-      <item index="1" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-      <item index="2" class="java.lang.String" itemvalue="Python.group_on_VW" />
-      <item index="3" class="java.lang.String" itemvalue="Python.kmean_inverted_file" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sift_retest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
+      <item index="1" class="java.lang.String" itemvalue="Python.group_on_VW" />
+      <item index="2" class="java.lang.String" itemvalue="Python.EM_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.database_prepare" />
+      <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sift_retest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.kmean_inverted_file" />
-        <item index="3" class="java.lang.String" itemvalue="Python.group_on_VW" />
-        <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval" />
+        <item index="0" class="java.lang.String" itemvalue="Python.first_retrieval" />
+        <item index="1" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
+        <item index="2" class="java.lang.String" itemvalue="Python.database_prepare" />
+        <item index="3" class="java.lang.String" itemvalue="Python.EM_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.group_on_VW" />
       </list>
     </recent_temporary>
   </component>
@@ -438,26 +446,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31447965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31447965" sideWeight="0.73020065" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3223982" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31447965" sideWeight="0.26979935" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32126698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -475,9 +483,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -519,32 +527,15 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/first_retrieval.py</url>
-          <line>188</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/first_retrieval.py</url>
-          <line>224</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/kmean_inverted_file.py</url>
-          <line>119</line>
+          <line>115</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/group_on_VW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="112" selection-start="14072" selection-end="14072" vertical-scroll-proportion="0.0" vertical-offset="6068" max-vertical-offset="7240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matching_homography.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
@@ -817,37 +808,9 @@
         <state line="58" column="28" selection-start="1815" selection-end="1815" vertical-scroll-proportion="-0.047058824" vertical-offset="1160" max-vertical-offset="3420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matching_homography.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first_retrieval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="66" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.0" vertical-offset="5590" max-vertical-offset="6780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hessian_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="2.8621974" vertical-offset="263" max-vertical-offset="2120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_on_VW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="0" selection-start="12193" selection-end="12193" vertical-scroll-proportion="0.0" vertical-offset="5890" max-vertical-offset="7380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_prepare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="2660" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2200">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sift_retest.py">
@@ -857,16 +820,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
+    <entry file="file://$PROJECT_DIR$/group_on_VW.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="0" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0" vertical-offset="1990" max-vertical-offset="4420">
+        <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="6080" max-vertical-offset="7300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matching_homography.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EM_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="23" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="0" selection-start="7407" selection-end="7407" vertical-scroll-proportion="0.63058823" vertical-offset="4164" max-vertical-offset="5040">
+        <state line="194" column="36" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="3900" max-vertical-offset="4680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="24" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="4140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="18" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0" vertical-offset="1474" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first_retrieval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="296" column="0" selection-start="12334" selection-end="12334" vertical-scroll-proportion="0.017482517" vertical-offset="5830" max-vertical-offset="6520">
           <folding />
         </state>
       </provider>
