@@ -282,7 +282,7 @@ if __name__ == "__main__":
         #     if kpts_tmp[j].octave > 8:
         #         kpts_tmp[j].octave = (kpts_tmp[j].octave - 256)
 
-        p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.95)
+        p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.97)
 
         print len(matches)
         # print type(kp_pairs)

@@ -34,7 +34,7 @@ def search_dir_and_create_csv(image_dir, top_dir):
     img_gray = cv2.resize(img_gray, (0,0), fx=0.5, fy=0.5)
 
     sift = cv2.SIFT()
-    surf = cv2.SURF(1000)
+    surf = cv2.SURF(250)
     kp = surf.detect(img_gray, None)
     kp, des = sift.compute(img_gray, kp)
     # kp, des = sift.detectAndCompute(img_gray, None)

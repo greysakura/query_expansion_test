@@ -15,15 +15,21 @@ img1 = cv2.imread('C:/Cassandra/orz_grey.jpg',0)
 # trainImage
 img2 = cv2.imread('C:/Cassandra/hereafter/grey_image12.jpg',0)
 
+orb = cv2.ORB()
+
+
+
 sift = cv2.SIFT()
 
-kp1, des1 = sift.detectAndCompute(img1, None)
+kp1, des1 = orb.detectAndCompute(img1, None)
 
-kp2, des2 = sift.detectAndCompute(img2, None)
+kp2, des2 = orb.detectAndCompute(img2, None)
 
 des1 = np.uint8(des1)
 des2 = np.uint8(des2)
 print type(des2[0,0])
+print des1.shape
+print des1[:,0]
 
 for i in range(len(kp1)):
     # kp1[i].octave = (kp1[i].octave & 0xFF)
@@ -41,13 +47,6 @@ img3 = cv2.drawKeypoints(img1,kp1,color=(0,0,255), flags=0)
 cv2.imshow('img1', img3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-print len(matches)
-print type(matches[0][0])
-for i in range(len(matches)):
-    print matches[i][0].distance
-    print matches[i][1].distance
-    print
 
 p1, p2, kp_pairs = filter_matches(kp1, kp2, matches, 0.95)
 if len(kp_pairs):
