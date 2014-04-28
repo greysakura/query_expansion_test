@@ -11,62 +11,63 @@ import numpy as np
 from time import clock
 start=clock()
 
-top_dir = 'C:/Cassandra/here/'
-cluster_number = 128
+top_dir = 'C:/Cassandra/ground02/'
+cluster_number = 256
 # Using SIFT here
 #
-des_dimension = 128
+des_dimension = 32
 result=[]
 result_img_dir =[]
 result_img_kpts = []
-index_file = open('C:/Cassandra/here/image_index_python.txt','rb')
+index_dir = top_dir + 'image_index_python.txt'
+index_file = open(index_dir,'rb')
 # not used here, but will be used.
 # line = index_file.readline()
-image_count = 0
+total_des_count = 0
 for line in index_file:
     result_img_dir.append((line.split(','))[0])
     result_img_kpts.append(int(float(line.split(',')[1][:-2])))
+    total_des_count += int(float(line.split(',')[1][:-2]))
 print result_img_dir
 print result_img_kpts
+print 'total_des_count: ', total_des_count
 index_file.close()
 image_count = len(result_img_dir)
+## 14/04/28 change the way of making des_mat
+des_mat = np.zeros((total_des_count, des_dimension), np.int32)
+des_count_present = 0
 for i in range(len(result_img_dir)):
     img_des_tmp = (result_img_dir[i].split('.'))[0] + '_des.csv'
     the_file = open(img_des_tmp,'rb')
-    des_mat = np.zeros((result_img_kpts[i], des_dimension), np.int32)
+    # des_mat_tmp = np.zeros((result_img_kpts[i], des_dimension), np.int32)
     reader = csv.reader(the_file, delimiter=',', quoting = csv.QUOTE_NONE)
     # reader = csv.reader(the_file, delimiter=',', quoting = csv.QUOTE_NONE)
-    row_count = 0
+
     for row in reader:
         for j in range(len(row)):
-            des_mat[row_count, j] = int(float(row[j]))
+            des_mat[des_count_present, j] = int(float(row[j]))
             # except:
             #     print 'y: ', row_count, ' x: ', i
-        row_count += 1
-    if i == 0:
-        mat_stack = des_mat.copy()
-    else:
-        mat_stack = np.concatenate((mat_stack, des_mat), axis = 0)
-        # mat_stack.append(des_mat)
+        des_count_present += 1
+
 
     the_file.close()
-print mat_stack.shape
+print des_mat.shape
 
 
 # set as float32
-mat_stack = np.float32(mat_stack)
-# print mat_stack[0,0]
-# print type(mat_stack[0,0])
-
+des_mat = np.float32(des_mat)
 
 # Set flags (Just to avoid line break in the code)
 flags = cv2.KMEANS_RANDOM_CENTERS
+# We use 128 clusters for our K-means clustering.
 # Define criteria_kmeans = ( type, max_iter = 10 , epsilon = 1.0 )
 criteria_kmeans = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_MAX_ITER, 5, 1)
 
 start_kmeans = clock()
+
 # Apply KMeans  cv2.kmeans(data, K, criteria, attempts, flags[, bestLabels[, centers]])
-compactness,labels,centers = cv2.kmeans(data= mat_stack, K = cluster_number, bestLabels=None,
+compactness,labels,centers = cv2.kmeans(data= des_mat, K = cluster_number, bestLabels=None,
                                         criteria= criteria_kmeans, attempts=10,flags=cv2.KMEANS_RANDOM_CENTERS)
 finish_kmeans = clock()
 
@@ -228,14 +229,9 @@ inverted_file_file.close()
 print 'number of images: '
 print image_count
 
+print centers.shape
+
 finish=clock()
 
 print 'total time used: ', (finish-start)
 print 'kmean time used: ', finish_kmeans - start_kmeans
-
-
-
-
-
-
-

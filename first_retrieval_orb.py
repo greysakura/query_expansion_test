@@ -13,20 +13,16 @@ from find_obj import filter_matches,explore_match
 if __name__ == "__main__":
     top_dir = 'C:/Cassandra/here/'
     # Number of clusters: 128 at present
-    cluster_number = 128
+    cluster_number = 256
     # Using SIFT here
-    des_dimension = 128
+    des_dimension = 32
     first_retrieval_num = 10
     # import target image
-    target_image_dir = 'C:/Cassandra/orz.jpg'
+    target_image_dir = 'C:/Cassandra/new_orz.jpg'
     img = cv2.imread(target_image_dir)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    surf = cv2.SURF(2000)
-    sift = cv2.SIFT()
-    kpts_target = surf.detect(img_gray, None)
-    kpts_target, des_target = sift.compute(img_gray, kpts_target)
-    # kpts_target, des_target = sift.detectAndCompute(img_gray, None)
-    # img = cv2.drawKeypoints(img_gray, kpts_target, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+    orb = cv2.ORB(200)
+    kpts_target, des_target = orb.detectAndCompute(img_gray, None)
     target_image_keypoint_num = len(kpts_target)
 
     img3 = cv2.drawKeypoints(img_gray,kpts_target,None,(0,0,255),4)
@@ -35,12 +31,6 @@ if __name__ == "__main__":
     cv2.destroyAllWindows()
 
     print len(kpts_target)
-
-    # for i in range(len(kpts_target)):
-    #     kpts_target[i].octave = (kpts_target[i].octave % 256)
-    #     if kpts_target[i].octave > 8:
-    #         kpts_target[i].octave = (kpts_target[i].octave - 256)
-    #     print kpts_target[i].octave
 
 
     # Allocate each new descriptor to a certain cluster.
@@ -197,7 +187,6 @@ if __name__ == "__main__":
     image_count = len(result_img_dir)
     distance_between_image = np.zeros((1,image_count), np.float64)
 
-
     ## Use the right tf-idf Matrix!!!!!!!!  14/04/28
     tf_idf_store_dir = top_dir + '/TF_IDF_matrix.txt'
     tf_idf_store_file = open(tf_idf_store_dir, 'r')
@@ -222,110 +211,19 @@ if __name__ == "__main__":
         # calculate distance.
         distance_between_image[0, i] = np.dot((np.dot(np.float64(target_image_VW - VW_tmp), TF_IDF_eye)), np.transpose(np.float64(target_image_VW - VW_tmp)))
     tf_idf_store_file.close()
+
     print distance_between_image
     print type(distance_between_image[0,0])
     distance_ranking = np.argsort(distance_between_image, axis=1)
     print distance_ranking
 
     for i in range(first_retrieval_num):
+        print distance_between_image[0,distance_ranking[0,i]]
         img_tmp = cv2.imread(result_img_dir[distance_ranking[0][i]],0 )
         img_tmp = cv2.resize(img_tmp, (0,0), fx=0.5, fy=0.5)
-        # cv2.namedWindow(result_img_dir[distance_ranking[0][i]])
-        # cv2.imshow(result_img_dir[distance_ranking[0][i]], img_tmp)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
-        str_kpts = '_kpts.csv'
-        str_des = '_des.csv'
-        str_VW = '_VW.txt'
-        image_dir_kpts = (result_img_dir[distance_ranking[0][i]].split('.'))[0] + str_kpts
-        image_dir_des = (result_img_dir[distance_ranking[0][i]].split('.'))[0] + str_des
-        image_dir_VW = (result_img_dir[distance_ranking[0][i]].split('.'))[0] + str_VW
-        tmp_VW_file = open(image_dir_VW, 'rb')
-        line_VW = tmp_VW_file.readline()
-        des_num_tmp = int(float(line_VW.split(',')[0]))
-        des_dimension_tmp = des_dimension
-        # tmp for descriptors
-        des_mat_tmp = np.zeros((des_num_tmp, des_dimension_tmp), np.int32)
-        des_tmp_file = open(image_dir_des,'rb')
-        reader_des = csv.reader(des_tmp_file, delimiter=',', quoting = csv.QUOTE_NONE)
-        row_count = 0
-        for row in reader_des:
-            for j in range(len(row)):
-                des_mat_tmp[row_count, j] = int(float(row[j]))
-            row_count += 1
-        des_tmp_file.close()
-        # tmp for kpts
-        kpts_tmp_file = open(image_dir_kpts,'rb')
-        kpts_mat_tmp = np.zeros((des_num_tmp, 7))
-        kpts_tmp = []
-        reader_kpts = csv.reader(kpts_tmp_file, delimiter=',', quoting = csv.QUOTE_NONE)
-        for row in reader_kpts:
-            kp_tmp = cv2.KeyPoint()
-            kp_tmp.pt = (float(row[0]), float(row[1]))
-            kp_tmp.size = float(row[2])
-            kp_tmp.angle = float(row[3])
-            kp_tmp.response = float(row[4])
-            kp_tmp.octave = int(float(row[5]))
-            kp_tmp.class_id = int(float(row[6]))
-            kpts_tmp.append(kp_tmp)
-        kpts_tmp_file.close()
-        # print len(kpts_tmp)
-        tmp_VW_file.close()
-        ## do the matching
-        bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-        # print des_target
-        des_target_tmp = np.uint8(des_target)
-        # print type(des_target_tmp[0,0])
-        des_mat_tmp = np.uint8(des_mat_tmp)
-        # print type(des_mat_tmp[0,0])
-        # print type(kpts_tmp[0])
-        ## numpy.uint8 VS. numpy.uint8
-        # tmp_matches = bf.match(des_target_tmp, des_mat_tmp)
-        # tmp_matches = sorted(tmp_matches, key = lambda x:x.distance)
-        matches = bf.knnMatch(des_target_tmp, trainDescriptors = des_mat_tmp, k = 2)
-        # for j in range(len(kpts_tmp)):
-        #     # kp1[i].octave = (kp1[i].octave & 0xFF)
-        #     kpts_tmp[j].octave = (kpts_tmp[j].octave % 256)
-        #     if kpts_tmp[j].octave > 8:
-        #         kpts_tmp[j].octave = (kpts_tmp[j].octave - 256)
+        cv2.namedWindow(result_img_dir[distance_ranking[0][i]])
+        cv2.imshow(result_img_dir[distance_ranking[0][i]], img_tmp)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
-        p1, p2, kp_pairs = filter_matches(kpts_target, kpts_tmp, matches, 0.97)
-
-        print len(matches)
-        # print type(kp_pairs)
-        print 'kp_pairs: ', len(kp_pairs)
-        if len(kp_pairs) > 0:
-            try:
-                explore_match('find_obj', img_gray,img_tmp,kp_pairs)
-                cv2.waitKey()
-                cv2.destroyAllWindows()
-            except :
-                print i
-
-        # img2 = cv2.drawKeypoints(img_tmp,kpts_tmp,color=(0,0,255), flags=0)
-        # cv2.imshow(result_img_dir[distance_ranking[0][i]], img2)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
-        # we had all the kpts and
-
-        # spatial verification stage
-        # see you tomorrow
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ## 14/04/28 here we've done first retrieval of image. But not good...

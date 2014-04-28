@@ -14,7 +14,6 @@ MIN_MATCH_COUNT = 10
 img1 = cv2.imread('C:/Cassandra/orz_grey.jpg',0)
 # trainImage
 img2 = cv2.imread('C:/Cassandra/hereafter/grey_image12.jpg',0)
-
 orb = cv2.ORB()
 
 

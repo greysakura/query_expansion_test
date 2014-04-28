@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153c1295-d1cb-4347-a651-8bdbf1f0e1c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_prepare.py" afterPath="$PROJECT_DIR$/database_prepare.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first_prepare_orb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first_retrieval_orb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kmeans_orb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first_retrieval.py" afterPath="$PROJECT_DIR$/first_retrieval.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/read_and_kmeans.py" afterPath="$PROJECT_DIR$/read_and_kmeans.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sift_retest.py" afterPath="$PROJECT_DIR$/sift_retest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database_prepare.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_prepare.py">
+      <file leaf-file-name="first_prepare_orb.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/first_prepare_orb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-1.5652174" vertical-offset="1484" max-vertical-offset="2100">
+            <state line="114" column="39" selection-start="3633" selection-end="3633" vertical-scroll-proportion="0.7323136" vertical-offset="1797" max-vertical-offset="2320">
               <folding />
             </state>
           </provider>
@@ -40,8 +43,30 @@
       <file leaf-file-name="read_and_kmeans.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="36" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="3880" max-vertical-offset="4680">
+            <state line="31" column="0" selection-start="642" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4940">
+              <folding>
+                <element signature="e#27#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kmeans_orb.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kmeans_orb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="33" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4740">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="first_retrieval_orb.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first_retrieval_orb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="34" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="4700">
+              <folding>
+                <element signature="e#27#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +74,7 @@
       <file leaf-file-name="kmean_inverted_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="24" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="4240">
+            <state line="150" column="24" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="4140">
               <folding />
             </state>
           </provider>
@@ -58,10 +83,8 @@
       <file leaf-file-name="first_retrieval.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first_retrieval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="78" selection-start="12000" selection-end="12000" vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6600">
-              <folding>
-                <element signature="e#27#37#0" expanded="true" />
-              </folding>
+            <state line="217" column="12" selection-start="8688" selection-end="8688" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="6660">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +101,7 @@
       <file leaf-file-name="matching_homography.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matching_homography.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
+            <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="637" max-vertical-offset="1160">
               <folding />
             </state>
           </provider>
@@ -96,7 +119,7 @@
       <file leaf-file-name="sift_retest.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sift_retest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="23" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="484" max-vertical-offset="1220">
+            <state line="15" column="62" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -119,11 +142,14 @@
         <option value="$PROJECT_DIR$/matching_homography.py" />
         <option value="$PROJECT_DIR$/hessian_test.py" />
         <option value="$PROJECT_DIR$/group_on_VW.py" />
-        <option value="$PROJECT_DIR$/read_and_kmeans.py" />
         <option value="$PROJECT_DIR$/kmean_inverted_file.py" />
         <option value="$PROJECT_DIR$/database_prepare.py" />
         <option value="$PROJECT_DIR$/first_retrieval.py" />
+        <option value="$PROJECT_DIR$/first_retrieval_orb.py" />
         <option value="$PROJECT_DIR$/sift_retest.py" />
+        <option value="$PROJECT_DIR$/read_and_kmeans.py" />
+        <option value="$PROJECT_DIR$/kmeans_orb.py" />
+        <option value="$PROJECT_DIR$/first_prepare_orb.py" />
       </list>
     </option>
   </component>
@@ -195,61 +221,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.sift_retest">
-    <configuration default="false" name="read_and_kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_and_kmeans.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="EM_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EM_test.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="database_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database_prepare.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.first_prepare_orb">
     <configuration default="false" name="first_retrieval" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,6 +255,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="query_expansion_test" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sift_retest.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="first_prepare_orb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first_prepare_orb.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="kmeans_orb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kmeans_orb.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="first_retrieval_orb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first_retrieval_orb.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -412,19 +442,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-      <item index="1" class="java.lang.String" itemvalue="Python.EM_test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.database_prepare" />
-      <item index="3" class="java.lang.String" itemvalue="Python.first_retrieval" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sift_retest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.first_retrieval" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sift_retest" />
+      <item index="2" class="java.lang.String" itemvalue="Python.first_prepare_orb" />
+      <item index="3" class="java.lang.String" itemvalue="Python.kmeans_orb" />
+      <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval_orb" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sift_retest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.first_retrieval" />
-        <item index="2" class="java.lang.String" itemvalue="Python.read_and_kmeans" />
-        <item index="3" class="java.lang.String" itemvalue="Python.database_prepare" />
-        <item index="4" class="java.lang.String" itemvalue="Python.EM_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.first_prepare_orb" />
+        <item index="1" class="java.lang.String" itemvalue="Python.first_retrieval_orb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.kmeans_orb" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sift_retest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval" />
       </list>
     </recent_temporary>
   </component>
@@ -464,8 +494,32 @@
       <created>1398426517966</created>
       <updated>1398426517966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="04/26">
+      <created>1398510019273</created>
+      <updated>1398510019273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -473,7 +527,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31447965" sideWeight="0.73020065" order="3" side_tool="false" content_ui="tabs" />
@@ -525,7 +579,8 @@
     </option>
     <MESSAGE value="04/11&#10;turning to SURF.&#10;First retrieval almost ready." />
     <MESSAGE value="04/25&#10;little change" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/25&#10;little change" />
+    <MESSAGE value="04/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/26" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,7 +602,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/sift_retest.py</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -557,53 +612,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/sift_retest.py</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/read_and_kmeans.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/kmeans_orb.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/kmeans_orb.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="50" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/matching_homography.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sift_retest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="59" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1280">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hessian_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1880" max-vertical-offset="2200" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="41" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="68" column="41" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="80" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="6860">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,24 +684,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="877" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="32" column="13" selection-start="877" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="0" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="5540">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,24 +729,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="40" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="21" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="4040" max-vertical-offset="5500">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,24 +774,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200">
-          <folding />
-        </state>
+        <state line="40" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="34" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="78" selection-start="9131" selection-end="9131" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5500">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,24 +819,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="1002" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="2000">
-          <folding />
-        </state>
+        <state line="35" column="4" selection-start="1002" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="2000" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="23" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="880" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="0" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5140">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -818,24 +859,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2000">
-          <folding />
-        </state>
+        <state line="24" column="21" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2000" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4540">
-          <folding />
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="188" column="26" selection-start="7674" selection-end="7674" vertical-scroll-proportion="0.0" vertical-offset="3760" max-vertical-offset="4240">
-          <folding>
-            <element signature="e#27#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -854,6 +893,18 @@
         <state line="94" column="22" selection-start="2528" selection-end="2528" vertical-scroll-proportion="2.8621974" vertical-offset="263" max-vertical-offset="2120" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EM_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="23" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="24" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="2100" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/group_on_VW.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="6080" max-vertical-offset="7300">
@@ -868,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EM_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="23" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="150" column="24" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="4140">
@@ -882,32 +926,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
+    <entry file="file://$PROJECT_DIR$/sift_retest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="36" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="3880" max-vertical-offset="4680">
+        <state line="15" column="62" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="78" selection-start="12000" selection-end="12000" vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="6600">
+        <state line="217" column="12" selection-start="8688" selection-end="8688" vertical-scroll-proportion="0.0" vertical-offset="3900" max-vertical-offset="6660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_and_kmeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="642" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4940">
           <folding>
             <element signature="e#27#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sift_retest.py">
+    <entry file="file://$PROJECT_DIR$/kmeans_orb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="23" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="484" max-vertical-offset="1220">
+        <state line="34" column="33" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4740">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_prepare.py">
+    <entry file="file://$PROJECT_DIR$/first_retrieval_orb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-1.5652174" vertical-offset="1484" max-vertical-offset="2100">
+        <state line="13" column="34" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="4700">
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first_prepare_orb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="39" selection-start="3633" selection-end="3633" vertical-scroll-proportion="0.7323136" vertical-offset="1797" max-vertical-offset="2320">
           <folding />
         </state>
       </provider>
