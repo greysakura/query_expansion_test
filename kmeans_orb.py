@@ -11,11 +11,11 @@ import numpy as np
 from time import clock
 start=clock()
 
-top_dir = 'C:/Cassandra/ground02/'
-cluster_number = 256
+top_dir = 'C:/Cassandra/here/'
+cluster_number = 8192
 # Using SIFT here
 #
-des_dimension = 32
+des_dimension = 128
 result=[]
 result_img_dir =[]
 result_img_kpts = []

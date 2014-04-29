@@ -35,9 +35,13 @@ def search_dir_and_create_csv(image_dir, top_dir):
 
     ## change!!! use ORB!!!
 
-    orb = cv2.ORB(nfeatures= 3400)
-    kp, des = orb.detectAndCompute(img_gray, None)
-    # kp, des = sift.detectAndCompute(img_gray, None)
+    # orb = cv2.ORB(nfeatures= 3400)
+    #
+    sift = cv2.SIFT(nfeatures = 250)
+    # kp, des = orb.detectAndCompute(img_gray, None)
+    # kp = orb.detect(img_gray)
+
+    kp, des = sift.detectAndCompute(img_gray, None)
 
     # img = cv2.drawKeypoints(img_gray, kp, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
     # print type(des[0,0])
@@ -89,10 +93,8 @@ if __name__ == "__main__":
     from time import clock
     start=clock()
     total_kpts_num = 0
-
     top_dir = 'C:/Cassandra/here/'
-
-    str_image_index_python_append = '/image_index_python.txt'
+    str_image_index_python_append = 'image_index_python.txt'
     str_image_index = top_dir + str_image_index_python_append
     file_image_index = open(str_image_index, 'w')
     image_search_dir = FileFilt()
