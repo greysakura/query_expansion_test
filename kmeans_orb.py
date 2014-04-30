@@ -6,7 +6,7 @@ import os
 import math
 import csv
 import numpy as np
-
+import gc
 ## timeit!!!
 from time import clock
 start=clock()
@@ -34,6 +34,8 @@ print 'total_des_count: ', total_des_count
 index_file.close()
 image_count = len(result_img_dir)
 ## 14/04/28 change the way of making des_mat
+## gc.collect()??
+gc.collect()
 des_mat = np.zeros((total_des_count, des_dimension), np.int32)
 des_count_present = 0
 for i in range(len(result_img_dir)):

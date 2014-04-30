@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153c1295-d1cb-4347-a651-8bdbf1f0e1c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/get_ground_truth_image.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/performance_evaluation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first_prepare_orb.py" afterPath="$PROJECT_DIR$/first_prepare_orb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BIG.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kmeans_orb.py" afterPath="$PROJECT_DIR$/kmeans_orb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,9 +31,7 @@
         <entry file="file://$PROJECT_DIR$/first_prepare_orb.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="102" column="4" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.0" vertical-offset="1821" max-vertical-offset="2460">
-              <folding>
-                <element signature="e#27#36#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,10 +39,8 @@
       <file leaf-file-name="get_ground_truth_image.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_ground_truth_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="26" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="1860">
-              <folding>
-                <element signature="e#27#36#0" expanded="true" />
-              </folding>
+            <state line="63" column="26" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="1760">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,19 +48,28 @@
       <file leaf-file-name="kmeans_orb.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kmeans_orb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4740">
+            <state line="228" column="0" selection-start="7269" selection-end="7269" vertical-scroll-proportion="0.0" vertical-offset="4059" max-vertical-offset="4880">
+              <folding>
+                <element signature="e#27#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BIG.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BIG.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="performance_evaluation.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="performance_evaluation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/performance_evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="8" selection-start="1397" selection-end="1397" vertical-scroll-proportion="1.835564" vertical-offset="0" max-vertical-offset="1100">
-              <folding>
-                <element signature="e#27#36#0" expanded="true" />
-              </folding>
+            <state line="27" column="41" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1100">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,25 +86,16 @@
       <file leaf-file-name="kmean_inverted_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kmean_inverted_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="4140">
+            <state line="26" column="4" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="4240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="group_on_VW.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group_on_VW.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="double_image.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="double_image.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/double_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="947" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="780">
+            <state line="35" column="0" selection-start="1048" selection-end="1112" vertical-scroll-proportion="0.73081607" vertical-offset="0" max-vertical-offset="821">
               <folding />
             </state>
           </provider>
@@ -119,7 +113,7 @@
       <file leaf-file-name="sift_retest.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sift_retest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1053" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1200">
+            <state line="45" column="0" selection-start="1053" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -150,9 +144,10 @@
         <option value="$PROJECT_DIR$/read_and_kmeans.py" />
         <option value="$PROJECT_DIR$/read_ground_truth.py" />
         <option value="$PROJECT_DIR$/first_prepare_orb.py" />
-        <option value="$PROJECT_DIR$/kmeans_orb.py" />
         <option value="$PROJECT_DIR$/get_ground_truth_image.py" />
         <option value="$PROJECT_DIR$/performance_evaluation.py" />
+        <option value="$PROJECT_DIR$/BIG.py" />
+        <option value="$PROJECT_DIR$/kmeans_orb.py" />
       </list>
     </option>
   </component>
@@ -188,7 +183,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,6 +203,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,13 +213,14 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dance_on_64" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.performance_evaluation">
+  <component name="RunManager" selected="Python.kmeans_orb">
     <configuration default="false" name="first_prepare_orb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,26 +252,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="query_expansion_test" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kmeans_orb.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="first_retrieval_orb" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="query_expansion_test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first_retrieval_orb.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -316,6 +292,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="query_expansion_test" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/performance_evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BIG" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="query_expansion_test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BIG.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -445,17 +439,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.first_prepare_orb" />
       <item index="1" class="java.lang.String" itemvalue="Python.kmeans_orb" />
-      <item index="2" class="java.lang.String" itemvalue="Python.first_retrieval_orb" />
-      <item index="3" class="java.lang.String" itemvalue="Python.read_ground_truth" />
-      <item index="4" class="java.lang.String" itemvalue="Python.performance_evaluation" />
+      <item index="2" class="java.lang.String" itemvalue="Python.read_ground_truth" />
+      <item index="3" class="java.lang.String" itemvalue="Python.performance_evaluation" />
+      <item index="4" class="java.lang.String" itemvalue="Python.BIG" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.performance_evaluation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.kmeans_orb" />
-        <item index="2" class="java.lang.String" itemvalue="Python.first_prepare_orb" />
-        <item index="3" class="java.lang.String" itemvalue="Python.read_ground_truth" />
-        <item index="4" class="java.lang.String" itemvalue="Python.first_retrieval_orb" />
+        <item index="0" class="java.lang.String" itemvalue="Python.kmeans_orb" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BIG" />
+        <item index="2" class="java.lang.String" itemvalue="Python.performance_evaluation" />
+        <item index="3" class="java.lang.String" itemvalue="Python.first_prepare_orb" />
+        <item index="4" class="java.lang.String" itemvalue="Python.read_ground_truth" />
       </list>
     </recent_temporary>
   </component>
@@ -503,7 +497,11 @@
       <created>1398687866509</created>
       <updated>1398687866509</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="04/29&#10;SIFT used. MemoryError??&#10;On 5k dataset.&#10;250 kpts per image.&#10;Query object and ground truth found, nice.">
+      <created>1398763397663</created>
+      <updated>1398763397663</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -538,16 +536,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31447965" sideWeight="0.73020065" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6624424" sideWeight="0.2962963" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33710408" sideWeight="0.7037037" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597285" sideWeight="0.7037037" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -565,9 +563,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12671594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -586,7 +584,8 @@
     <MESSAGE value="04/25&#10;little change" />
     <MESSAGE value="04/26" />
     <MESSAGE value="04/28&#10;ORB used.&#10;On 5k dataset.&#10;3300 kpts per image." />
-    <option name="LAST_COMMIT_MESSAGE" value="04/28&#10;ORB used.&#10;On 5k dataset.&#10;3300 kpts per image." />
+    <MESSAGE value="04/29&#10;SIFT used. MemoryError??&#10;On 5k dataset.&#10;250 kpts per image.&#10;Query object and ground truth found, nice." />
+    <option name="LAST_COMMIT_MESSAGE" value="04/29&#10;SIFT used. MemoryError??&#10;On 5k dataset.&#10;250 kpts per image.&#10;Query object and ground truth found, nice." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,26 +627,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/kmeans_orb.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/kmeans_orb.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="49" />
+          <line>39</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="53" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/group_on_VW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="41" selection-start="12730" selection-end="12730" vertical-scroll-proportion="0.0" vertical-offset="6816" max-vertical-offset="7320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matching_homography.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="18" selection-start="933" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1280">
@@ -681,9 +668,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="5540">
-          <folding />
-        </state>
+        <state line="90" column="0" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="5540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find_obj.py">
@@ -724,9 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="4040" max-vertical-offset="5500">
-          <folding />
-        </state>
+        <state line="16" column="21" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="4040" max-vertical-offset="5500" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find_obj.py">
@@ -767,9 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="78" selection-start="9131" selection-end="9131" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5500">
-          <folding />
-        </state>
+        <state line="218" column="78" selection-start="9131" selection-end="9131" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5500" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find_obj.py">
@@ -810,9 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="0" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5140">
-          <folding />
-        </state>
+        <state line="210" column="0" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="5140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find_obj.py">
@@ -848,9 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="26" selection-start="7674" selection-end="7674" vertical-scroll-proportion="0.0" vertical-offset="3760" max-vertical-offset="4240">
-          <folding />
-        </state>
+        <state line="188" column="26" selection-start="7674" selection-end="7674" vertical-scroll-proportion="0.0" vertical-offset="3760" max-vertical-offset="4240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common.py">
@@ -910,24 +887,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first_retrieval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="12" selection-start="8688" selection-end="8688" vertical-scroll-proportion="0.0" vertical-offset="3900" max-vertical-offset="6660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kmeans_orb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4740">
-          <folding />
-        </state>
+        <state line="217" column="12" selection-start="8688" selection-end="8688" vertical-scroll-proportion="0.0" vertical-offset="3900" max-vertical-offset="6660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first_prepare_orb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="4" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.0" vertical-offset="1821" max-vertical-offset="2460">
-          <folding>
-            <element signature="e#27#36#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,33 +906,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/group_on_VW.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="6080" max-vertical-offset="7300">
+        <state line="328" column="47" selection-start="13451" selection-end="13451" vertical-scroll-proportion="0.0" vertical-offset="6080" max-vertical-offset="7300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="41" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1100">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/double_image.py">
+    <entry file="file://$PROJECT_DIR$/BIG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="947" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="780">
+        <state line="9" column="40" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kmeans_orb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="0" selection-start="7269" selection-end="7269" vertical-scroll-proportion="0.0" vertical-offset="4059" max-vertical-offset="4880">
+          <folding>
+            <element signature="e#27#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_ground_truth_image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="26" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="1860">
-          <folding>
-            <element signature="e#27#36#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/performance_evaluation.py">
+    <entry file="file://$PROJECT_DIR$/double_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="8" selection-start="1397" selection-end="1397" vertical-scroll-proportion="1.835564" vertical-offset="0" max-vertical-offset="1100">
-          <folding>
-            <element signature="e#27#36#0" expanded="true" />
-          </folding>
+        <state line="35" column="0" selection-start="1048" selection-end="1112" vertical-scroll-proportion="0.73081607" vertical-offset="0" max-vertical-offset="821">
+          <folding />
         </state>
       </provider>
     </entry>
